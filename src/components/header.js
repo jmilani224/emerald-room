@@ -12,11 +12,11 @@ const Header = () => {
         </div>
       <nav>
         <ul className={headerStyles.navList}>
-            <li className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} onClick={() => scrollTo('#home')}>Home</li>
-            <li className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} onClick={() => scrollTo('#about')}>About</li>
-            <li className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} onClick={() => scrollTo('#loc')}>Location</li>
-            <li className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} onClick={() => scrollTo('#services')}>Services</li>
-            <li className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} onClick={() => scrollTo('#book')}>Book Now</li>
+            <li className={headerStyles.navItem} onClick={() => scrollTo('#home')}>Home</li>
+            <li className={headerStyles.navItem} onClick={() => scrollTo('#about')}>About</li>
+            <li className={headerStyles.navItem} onClick={() => scrollTo('#loc')}>Location</li>
+            <li className={headerStyles.navItem} onClick={() => scrollTo('#services')}>Services</li>
+            <li className={headerStyles.navItem} onClick={() => scrollTo('#book')}>Book Now</li>
         </ul>
       </nav>
     </header>

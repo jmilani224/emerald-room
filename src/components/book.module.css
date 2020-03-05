@@ -13,3 +13,10 @@
     margin-top: 2rem;
     margin-bottom: 1em;
 }
+
+@media screen and (max-width: 573px) {
+
+    .book-h1 {
+        font-size: 3rem;
+    }
+}

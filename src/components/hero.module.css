@@ -40,7 +40,7 @@
     color: #ffffff;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
 
     .container {
         display: flex;
@@ -51,4 +51,33 @@
         padding-top: 8rem;
         background-image: none;
     }
+}
+
+
+@media screen and (max-width: 501px) {
+    .container {
+        padding-top: 0;
+    }
+
+    .logo-img {
+        margin-bottom: 1.3rem;
+        min-width: 0;
+        max-width: 500;
+        width: 65vw;
+     }
+
+    .book-button {
+        background-color: var(--main-color);
+        color: #ffffff;
+        margin: 5em 0 0 0;
+        width: 75vw;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 1rem 1.8rem;
+    }
+
+    .hero-h1 {
+        font-size: 1.4rem;
+    }
+    
 }
