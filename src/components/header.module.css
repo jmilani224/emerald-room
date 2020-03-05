@@ -1,0 +1,52 @@
+.sticky-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    padding: 1rem 0 0.3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ease all 0.5s;
+}
+
+.title {
+    color: var(--main-txt-color);
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-right: 25vw;
+    margin-left: 4rem;
+    font-weight: 400;
+    min-width: 250px;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
+    color: var(--main-txt-color);
+    font-size: .85rem;
+    margin-right: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  .nav-item:hover:after {
+    width: 100%;
+    background: var(--main-color);
+  }

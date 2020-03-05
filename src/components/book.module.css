@@ -1,0 +1,15 @@
+.book-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 10vh;
+    width: auto;
+}
+
+.book-h1 {
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+}

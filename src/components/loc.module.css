@@ -1,0 +1,86 @@
+.loc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 20vh;
+}
+
+.loc-h1 {
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.street-view {
+    width: 15vw;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.con-node {
+    padding: 1rem 2rem;
+}
+
+.head {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.par {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.phone, .phone:hover {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.hours-table {
+    border: none;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.right {
+    width: 35vw;
+    height: 40vh;
+    margin-left: 2em;
+}
+
+.marker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    background: var(--main-color);
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+
+}
+    
+.marker:after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin: 8px 0 0 8px;
+    background: #ffffff;
+    position: absolute;
+    border-radius: 50%;
+}
