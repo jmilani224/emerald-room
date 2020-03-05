@@ -30,16 +30,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-/*const bodySec = document.body;
-let bodyPos;
-let header;
-window.addEventListener('scroll', ()=>{
-    header = document.querySelector('header');
-    bodyPos = bodySec.getBoundingClientRect().y;
-    if (bodyPos < -200 ) {
-        header.style.backgroundColor = "#ffffff";
-    } else {
-        header.style.backgroundColor = "transparent";
-    }
- });*/
