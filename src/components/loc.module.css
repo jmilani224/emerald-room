@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 1358px) {
     .loc-container {
-        padding: 3rem 0;
+        padding: 0;
     }
     
     .left {
@@ -123,6 +123,7 @@
 
     .loc-h1 {
         font-size: 3rem;
+        margin-top: 0;
     }
 
     .head {

@@ -3,7 +3,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 3rem 10vh;
+    padding: 3rem 0;
     width: auto;
 }
 
@@ -12,6 +12,7 @@
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 @media screen and (max-width: 573px) {
