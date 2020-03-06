@@ -20,11 +20,6 @@ class Book extends Component {
           id="frameTitle"
           className="embedded-widget-title"
           style={{
-            fontSize: '23px',
-            color: '#333',
-            fontFamily: 'Arial, Helvetica, sans-serif',
-            lineHeight:'24px',
-            padding:'18px 10px 8px',
             textAlign:'center',
             boxSizing:'border-box',
             width: '100vw'
