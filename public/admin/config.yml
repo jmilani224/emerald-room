@@ -11,10 +11,12 @@ collections:
         name: "index"
         file: "/src/markdown-pages/about.md"
         fields:
-        - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content", name: "body", widget: "markdown"}
       - label: "Location Section"  
         name: "location"
         widget: "object"
         fields:
-        - {label: "Address", file: "/src/markdown-pages/Location/address.md", name: "body", widget: "markdown"}
-        - {label: "Hours", file: "/src/markdown-pages/Location/hours.md", name: "body", widget: "markdown"}
+          - label: "Address"
+            name: "body"
+            file: "/src/markdown-pages/location/address.md"
+              - {label: "Content", name: "body", widget: "markdown"}
