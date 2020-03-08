@@ -6,18 +6,15 @@ media_folder: "/src/images" # Media files will be stored in the repo under image
 collections:
   - label: "Homepage"
     name: "pages"
+    widget: "object"
     files:
       - label: "About Section"
         name: "index"
         file: "/src/markdown-pages/about.md"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}
-      - label: "Location Section"  
-        name: "location"
-        widget: "object"
+      - label: "Address"  
+        name: "address"
+        file: "/src/markdown-pages/location/address.md"
         fields:
-          - label: "Address"
-            name: "index"
-            file: "/src/markdown-pages/location/address.md"
-            fields:
-              - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content", name: "body", widget: "markdown"}
