@@ -39,7 +39,7 @@
     font-size: 0.8rem;
 }
 
-.phone, .phone:hover {
+.con-node a, .con-node a:hover {
     text-decoration: none;
     color: var(--main-text-color);
 }
