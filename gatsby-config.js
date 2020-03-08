@@ -21,5 +21,13 @@ module.exports = {
         icon: `src/images/favicon.jpg`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'pages',
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ]
 } 

@@ -4,18 +4,11 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "/src/images" # Media files will be stored in the repo under images/uploads
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Sections"
+    name: "sections"
     files:
-      - label: "Homepage"
-        name: "index"
-        file: "/src/pages/index.js"
+      - label: "About Section"
+        name: "about"
+        file: "/src/markdown-pages/about.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+          - {label: Content, name: content, widget: string}
