@@ -11,4 +11,4 @@ collections:
         name: "index"
         file: "/src/markdown-pages/about.md"
         fields:
-          - {label: About, name: about, widget: string}
+        - {label: "Content", name: "body", widget: "markdown"}
