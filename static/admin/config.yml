@@ -9,13 +9,6 @@ collections:
     files:
       - label: "Homepage"
         name: "index"
-        file: "/src/pages/index.js"
+        file: "/src/markdown-pages/about.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+          - {label: About, name: about, widget: string}
