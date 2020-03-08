@@ -15,6 +15,6 @@ collections:
           - {label: "Content", name: "body", widget: "markdown"}
       - label: "Address"  
         name: "address"
-        file: "/src/markdown-pages/location/address.md"
+        file: "/src/markdown-pages/address.md"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}

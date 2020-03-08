@@ -9,7 +9,7 @@ collections:
     widget: "object"
     files:
       - label: "About Section"
-        name: "index"
+        name: "about" # chanted from index
         file: "/src/markdown-pages/about.md"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}
