@@ -6,7 +6,7 @@
     padding: 3rem 10vh;
 }
 
-.loc-h1 {
+.loc-container h1 {
     font-weight: 200;
     font-size: 2rem;
     margin-top: 2rem;
@@ -29,12 +29,12 @@
     padding: 1rem 2rem;
 }
 
-.head {
+.con-node h2 {
     font-weight: 400;
     font-size: 1rem;
 }
 
-.par {
+.con-node p {
     font-weight: 400;
     font-size: 0.8rem;
 }

@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import aboutStyles from "./about.module.css"
 
 const About = () => (
+  
     <StaticQuery
       query={graphql`
         {
@@ -14,6 +15,7 @@ const About = () => (
       `}
       render={data => <div id="about" className={aboutStyles.aboutContainer} dangerouslySetInnerHTML={{__html:data.markdownRemark.html}}></div>}
     ></StaticQuery>
+
   )
   
   export default About
