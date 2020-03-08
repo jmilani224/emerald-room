@@ -3,20 +3,19 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
 media_folder: "/src/images" # Media files will be stored in the repo under images/uploads
-site_url: https://elegant-mahavira-8f2c94.netlify.com/
-logo_url: https://your-site.com/images/logo.svg
+site_url: "https://elegant-mahavira-8f2c94.netlify.com/"
+logo_url: "/src/images/logo.png"
 collections:
   - label: "Homepage"
     name: "pages"
-    widget: "object"
     files:
-      - label: "About Section"
+      - file: "/src/markdown-pages/about.md"
+        label: "About Section"
         name: "about"
-        file: "/src/markdown-pages/about.md"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}
-      - label: "Address"  
+      - file: "/src/markdown-pages/location/address.md"
+        label: "Address"  
         name: "address"
-        file: "/src/markdown-pages/location/address.md"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}

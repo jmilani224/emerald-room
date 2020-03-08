@@ -8,15 +8,14 @@ logo_url: "/src/images/logo.png"
 collections:
   - label: "Homepage"
     name: "pages"
-    widget: "object"
     files:
-      - label: "About Section"
+      - file: "/src/markdown-pages/about.md"
+        label: "About Section"
         name: "about"
-        file: "/src/markdown-pages/about.md"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}
-      - label: "Address"  
+      - file: "/src/markdown-pages/location/address.md"
+        label: "Address"  
         name: "address"
-        file: "/src/markdown-pages/location/address.md"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}
