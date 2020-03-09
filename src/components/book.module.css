@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     padding: 3rem 0;
-    width: auto;
+    width: 100vw;
 }
 
 .book-h1 {

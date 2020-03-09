@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 1358px) {
     .loc-container {
-        padding: 0;
+        padding-bottom: 3rem;
     }
 
     .loc-h1 {
