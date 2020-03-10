@@ -4,7 +4,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "/src/images" # Media files will be stored in the repo under images/uploads
 site_url: "https://elegant-mahavira-8f2c94.netlify.com/"
-logo_url: "src/images/logo.png"
+logo_url: "https://d33wubrfki0l68.cloudfront.net/e7bff93bed13616df27fa4426b8d288829d423ba/3e51d/static/logo-f3079e02981bbd16bc1afcb4f9c91c7f.png"
 collections:
   - label: "Homepage"
     name: "pages"
