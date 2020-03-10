@@ -124,8 +124,8 @@
         justify-content: center;
     }
 
-    .loc-h1 {
-        font-size: 3rem;
+    .loc-container h1 {
+        font-size: 2.5rem;
         margin-top: 0;
     }
 
