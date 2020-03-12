@@ -18,7 +18,7 @@ module.exports = {
         useMozJpeg: false,
         stripMetadata: true,
         defaultQuality: 75,
-        icon: `/src/images/favicon.jpg`, // This path is relative to the root of the site.
+        icon: `/static/admin/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
