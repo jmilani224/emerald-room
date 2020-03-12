@@ -5,7 +5,7 @@
     flex-direction: column;
     height: 100vh;
     padding-top: 8rem;
-    background-image: url(../images/plant-background3.jpg);
+    background-image: url(../images/plant-background3-scaled.jpg);
     background-size: 110vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,6 +38,10 @@
 .book-button:hover {
     background-color: var(--main-color);
     color: #ffffff;
+}
+
+.arrow {
+    display: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -78,6 +82,5 @@
 
     .hero-h1 {
         font-size: 1.4rem;
-    }
-    
+    } 
 }
