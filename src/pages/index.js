@@ -17,7 +17,7 @@ const IndexPage = () => {
             <div>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>The EMERALD ROOM</title>
+                    <title>THE EMERALD ROOM</title>
                     <meta name="description" content="A salon in Lakewood, Ohio, offering hair, spa, and other services for everyone." />
                     <link rel="icon" 
                         type="image/png" 
