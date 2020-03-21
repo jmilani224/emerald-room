@@ -1,4 +1,4 @@
-.about-container {
+.container {
     height: 60vh;
     background-color: var(--main-color);
     color: #ffffff;
@@ -9,26 +9,26 @@
     flex-direction: column;
 }
 
-.about-container h1 {
+.container h1 {
     font-weight: 200;
     font-size: 2rem;
 }
 
 @media screen and (max-width: 877px) {
-    .about-container {
+    .container {
         height: 100vh;
         padding: 3rem 10vh;
 
     }
     
-    .about-container h1 {
+    .container h1 {
         font-size: 1.5rem;
     }
 
 }
 
 @media screen and (max-width: 501px) {
-    .about-container {
+    .container {
         display: none;
     }
 }

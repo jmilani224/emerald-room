@@ -6,7 +6,7 @@ const Services = () => {
     
     return (
         <div id="services" className={servicesStyles.servicesContainer}>
-            <h1 className={servicesStyles.servicesH1}>A Sampling of Services</h1>
+            <h1>A Sampling of Services</h1>
                 <div className={servicesStyles.tableContainer}>
                     <table className={servicesStyles.servicesTable1}>
                         <tbody>

@@ -1,8 +1,6 @@
 ---
-title: address
+title: Address
 ---
-
-## Address
 
 15721 Madison Ave.  
 Lakewood, Ohio 44107  

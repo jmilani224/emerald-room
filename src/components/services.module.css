@@ -9,10 +9,9 @@
     background-size: 100vw;
     background-repeat: no-repeat;
     background-position: cover;
-
 }
 
-.services-h1 {
+.services-container h1 {
     font-weight: 200;
     font-size: 2rem;
     margin-top: 2rem;

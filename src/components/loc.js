@@ -9,13 +9,13 @@ const Loc = () => (
     <StaticQuery
       query={graphql`
         {
-          markdownRemark(frontmatter: {title: {eq: "address"}}) {
+          markdownRemark(frontmatter: {title: {eq: "Address"}}) {
             html
           }
         }
       `}
       render={data => 
-        <div id="loc" className={locStyles.locContainer}>
+        <div id="loc" className={locStyles.container}>
         <h1 className={locStyles.locH1}>Location</h1>
             <div className={locStyles.main}>
                 

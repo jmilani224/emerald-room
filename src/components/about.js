@@ -13,7 +13,10 @@ const About = () => (
           }
         }
       `}
-      render={data => <div id="about" className={aboutStyles.aboutContainer} dangerouslySetInnerHTML={{__html:data.markdownRemark.html}}></div>}
+      render={data => 
+      <div id="about" className={aboutStyles.container} dangerouslySetInnerHTML={{__html:data.markdownRemark.html}}>
+
+      </div>}
     ></StaticQuery>
 
   )
