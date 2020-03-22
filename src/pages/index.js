@@ -4,7 +4,7 @@ import '../styles/index.css'
 import {Helmet} from "react-helmet";
 import icon from "../../static/admin/favicon.png"
 
-import Header from "../components/header.js"
+import Header from "../components/header"
 import Hero from "../components/hero.js"
 import About from "../components/about.js"
 import Loc from "../components/loc.js"

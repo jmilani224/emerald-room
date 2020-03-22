@@ -1,7 +1,7 @@
 import React from 'react'
 
 import servicesStyles from "./services.module.css"
-import Card from "./card.js"
+import Card from "./element-components/card.js"
 
 const Services = () => {
     
@@ -70,7 +70,7 @@ const Services = () => {
                     </ul> 
                 </Card>
             </div>     
-    </div>    
+    </div>
 
     )
 }

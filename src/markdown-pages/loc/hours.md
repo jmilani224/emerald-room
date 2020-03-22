@@ -1,5 +1,6 @@
 ---
 title: Hours
+
 ---
 
 | Sun | Closed |

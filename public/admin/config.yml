@@ -13,9 +13,8 @@ collections:
         label: "About Section"
         name: "about"
         fields:
-          - {label: "Headline", name: "h1", widget: "markdown"}
-          - {label: "Paragraph 1", name: "p1", widget: "markdown"}
-          - {label: "Paragraph 2", name: "p2", widget: "markdown"}
+          - {label: "Headline", name: "h1", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "/src/markdown-pages/loc/address.md"
         label: "Address"  
         name: "Address"
