@@ -70,6 +70,10 @@
         width: 65vw;
      }
 
+     .hero-h1 {
+        font-size: 1.4rem;
+    } 
+
     .book-button {
         background-color: var(--main-color);
         color: #ffffff;
@@ -79,8 +83,29 @@
         font-weight: 600;
         padding: 1rem 1.8rem;
     }
+    .arrow {
+        display: block;
+        margin-top: 3em;
+        width: 2.2em;
+        height: 2.2em;
+        transform: rotate(45deg);
+        border-right: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+        animation: pulse 2.5s infinite linear;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: rotate(45deg) scale(0.9);
+        }
+        
+        50% {
+            transform: rotate(45deg) scale(1);
+        }
+        
+        100% {
+            transform: rotate(45deg) scale(0.9);
+        }
+    }
 
-    .hero-h1 {
-        font-size: 1.4rem;
-    } 
 }

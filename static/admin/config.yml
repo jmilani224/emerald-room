@@ -18,6 +18,6 @@ collections:
           - {label: "Paragraph 2", name: "p2", widget: "markdown"}
       - file: "/src/markdown-pages/location/address.md"
         label: "Address"  
-        name: "address"
+        name: "Address"
         fields:
           - {label: "Content", name: "body", widget: "markdown"}

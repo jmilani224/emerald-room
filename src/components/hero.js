@@ -12,6 +12,7 @@ const Hero = () => {
             </div>
             <h1 className={heroStyles.heroH1}>SALON. SPA. SHOP.</h1>
             <button className={heroStyles.bookButton} onClick={() => scrollTo('#book')} onKeyDown={() => scrollTo('#book')}>Book an Appointment</button>
+            <div className={heroStyles.arrow}></div>
         </div>
     )
 }

@@ -1,0 +1,32 @@
+.card {
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 0em 0.3em 0.3em 0.8em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    border-top: 6px solid var(--main-color);
+    border-radius: 2px;
+    transition: ease 0.1s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    transition: ease 0.1s;
+}
+
+.list-heading {
+    font-weight: 600;
+    font-size: 0.8rem; 
+    display: block;
+    margin: 1.3em 0 1em 0;
+    text-align: center;
+}
+
+.children {
+    color: var(--main-color)
+}
