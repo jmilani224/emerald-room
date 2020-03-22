@@ -14,8 +14,8 @@ collections:
         name: "about"
         fields:
           - {label: "Headline", name: "h1", widget: "markdown"}
-          - {label: "Paragraph 1", name: "p1", widget: "markdown"}
-          - {label: "Paragraph 2", name: "p2", widget: "markdown"}
+            - {label: "Paragraph 1", name: "p1", widget: "markdown"}
+            - {label: "Paragraph 2", name: "p2", widget: "markdown"}
       - file: "/src/markdown-pages/location/address.md"
         label: "Address"  
         name: "Address"
