@@ -61,6 +61,7 @@
 @media screen and (max-width: 501px) {
     .container {
         padding-top: 0;
+        margin: -10px;
     }
 
     .logo-img {
@@ -85,18 +86,18 @@
     }
     .arrow {
         display: block;
-        margin-top: 3em;
+        margin-top: 6em;
         width: 2.2em;
         height: 2.2em;
         transform: rotate(45deg);
         border-right: 2px solid #000000;
         border-bottom: 2px solid #000000;
-        animation: pulse 2.5s infinite linear;
+        animation: pulse 3s infinite linear;
     }
     
     @keyframes pulse {
         0% {
-            transform: rotate(45deg) scale(0.9);
+            transform: rotate(45deg) scale(0.8);
         }
         
         50% {
@@ -104,7 +105,7 @@
         }
         
         100% {
-            transform: rotate(45deg) scale(0.9);
+            transform: rotate(45deg) scale(0.8);
         }
     }
 
