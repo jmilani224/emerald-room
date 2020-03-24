@@ -20,7 +20,7 @@ const Services = () => {
                     </ul> 
                 </Card>
 
-                <Card title="💇‍♀️Ladies">
+                <Card title="💇‍♀Ladies">
                     <ul>   
                         <li>Cut</li>
                         <li>Girls Cut</li>
