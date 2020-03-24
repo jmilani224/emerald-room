@@ -7,7 +7,7 @@ class Book extends Component {
   
   componentDidMount(){
     const script=document.createElement('script')
-    script.src="https://www.vagaro.com//resources/WidgetEmbeddedLoader/OZqnCJ4nEJacT3qmV35y6RuSdBuOc1WJD1wOc1WO61CxdfcJE1wgEJgoapOUc8?v=zxOBNHDBQpkWELAcx8OJg8LPozVGMfY9neinaAn9jw1#"
+    script.src="https://www.vagaro.com//resources/WidgetEmbeddedLoader/OZqnCJ4nEJacT3qmV35y6JuPlXoSlXYO61Cq7fYO61WO4pkUcPCu7gevEhAJDXwOW?v=zxOBNHDBQpkWELAcx8OJg8LPozVGMfY9neinaAn9jw1#"
     script.async=true;
     this.instance.appendChild(script)
     
@@ -20,8 +20,6 @@ class Book extends Component {
           id="frameTitle"
           className="embedded-widget-title"
           style={{
-            textAlign:'center',
-            boxSizing:'border-box',
             width: '100vw'
           }}
         >

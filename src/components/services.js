@@ -13,6 +13,7 @@ const Services = () => {
                 <Card title="💇‍♂️Gents">
                     <ul>   
                         <li>Cut</li>
+                        <li>Boys Cut</li>
                         <li>Shampoo</li>
                         <li>Hot Lather Neck Shave</li>
                         <li>Back or Chest Trim</li>
@@ -21,14 +22,14 @@ const Services = () => {
 
                 <Card title="💇‍♀️Ladies">
                     <ul>   
-                        <li>Ladies Cut</li>
+                        <li>Cut</li>
                         <li>Girls Cut</li>
                         <li>Extension Consultation</li>
                         <li>Blowout & Style</li>
                     </ul> 
                 </Card>
 
-                <Card title="👐Massage">
+                <Card title="💆‍♂️Massage">
                     <ul>   
                         <li>Scalp</li>
                         <li>Hot Stone</li>
