@@ -19,13 +19,20 @@
     transition: ease 0.3s;
 }
 
+.header-group {
+    margin: 1em 0 1em 1em;
+}
+
+.emoji {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
 .list-heading {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 0.85rem; 
-    display: block;
-    margin: 1.3em 0 1em 0;
+    display: inline;
     text-align: center;
-    margin-left: -1.2em;
 }
 
 .children {

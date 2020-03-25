@@ -21,8 +21,8 @@ const About = () => (
         <h1>{data.markdownRemark.frontmatter.h1}</h1>
         <div dangerouslySetInnerHTML={{__html:data.markdownRemark.html}}></div>
       </div>}
+      
     ></StaticQuery>
-
   )
   
   export default About

@@ -3,13 +3,14 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-top: 4rem;
-    background-image: url(../images/suc.jpg);
+    padding-top: 2rem;
+    background: #eaeaea;
     height: auto;
     min-height: 100vh;
     background-size: cover;
     background-position: bottom;
 }
+
 
 .services-container h1 {
     font-weight: 200;
@@ -23,6 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 501px) {
