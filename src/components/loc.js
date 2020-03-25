@@ -9,7 +9,7 @@ const Loc = () => (
   <StaticQuery
   query={graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "Location"}}) {
+      markdownRemark(frontmatter: {title: {eq: "location"}}) {
         frontmatter {
           sun
           sat
