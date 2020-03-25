@@ -6,14 +6,21 @@ import GoogleMapReact from 'google-map-react'
 
 const Loc = () => (
   
-    <StaticQuery
-      query={graphql`
-        {
-          markdownRemark(frontmatter: {title: {eq: "Address"}}) {
-            html
-          }
+  <StaticQuery
+  query={graphql`
+    {
+      markdownRemark(frontmatter: {title: {eq: "Location"}}) {
+        frontmatter {
+          sun
+          sat
+          mon_tue
+          wed_thu
+          fri
         }
-      `}
+        html
+      }
+    }
+  `}
       render={data => 
         <div id="loc" className={locStyles.container}>
         <h1 className={locStyles.locH1}>Location</h1>
@@ -28,23 +35,23 @@ const Loc = () => (
                         <table className={locStyles.hoursTable}>
                         <tr>
                             <td>Sun</td>
-                            <td>Closed</td>
+                            <td>{data.markdownRemark.frontmatter.sun}</td>
                         </tr>
                         <tr>
                             <td>Mon - Tues</td>
-                            <td>10AM - 7PM</td>
+                            <td>{data.markdownRemark.frontmatter.mon_tue}</td>
                         </tr>
                         <tr>
                             <td>Wed - Thurs</td>
-                            <td>10AM - 8PM</td>
+                            <td>{data.markdownRemark.frontmatter.wed_thu}</td>
                         </tr>
                         <tr>
                             <td>Fri</td>
-                            <td>9AM - 8PM</td>
+                            <td>{data.markdownRemark.frontmatter.fri}</td>
                         </tr>
                         <tr>
                             <td>Sat</td>
-                            <td>9AM - 5PM</td>
+                            <td>{data.markdownRemark.frontmatter.sat}</td>
                         </tr>
                         </table>
                     </div> 

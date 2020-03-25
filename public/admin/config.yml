@@ -16,7 +16,16 @@ collections:
           - {label: "Headline", name: "h1", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "/src/markdown-pages/loc/address.md"
-        label: "Address"  
-        name: "Address"
+        label: "Location"  
+        name: "Location"
         fields:
-          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Address", name: "body", widget: "markdown"}
+          - label: "Hours"
+            name: "hours"
+            widget: "object"
+            fields:
+              - {label: "Sunday", name: "sun", widget: "string"}
+              - {label: "Mon-Tues", name: "mon-tue", widget: "string"}
+              - {label: "Wed-Thurs", name: "wed-thu", widget: "string"}
+              - {label: "Friday", name: "fri", widget: "string"}
+              - {label: "Saturday", name: "sat", widget: "string"}
