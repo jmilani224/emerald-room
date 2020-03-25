@@ -7,7 +7,7 @@ fri: 9AM - 8PM
 sat: 9AM - 5PM
 ---
 
-## Address
+## Addres
 
 15721 Madison Ave.  
 Lakewood, Ohio 44107  
