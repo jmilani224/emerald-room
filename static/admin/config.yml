@@ -20,7 +20,6 @@ collections:
         name: "location"
         widget: "object"
         fields:
-          - {label: "Address", name: "body", widget: "markdown"}
           - label: "Hours"
             name: "hours"
             widget: "object"
@@ -30,3 +29,4 @@ collections:
               - {label: "Wed-Thurs", name: "wed-thu", widget: "string"}
               - {label: "Friday", name: "fri", widget: "string"}
               - {label: "Saturday", name: "sat", widget: "string"}
+          - {label: "Address", name: "body", widget: "markdown"}
