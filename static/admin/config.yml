@@ -9,13 +9,13 @@ collections:
   - label: "Homepage"
     name: "pages"
     files:
-      - file: "/src/markdown-pages/about.md"
+      - file: "src/markdown-pages/about.md"
         label: "About"
         name: "about"
         fields:
           - {label: "Headline", name: "h1", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "/src/markdown-pages/location.md"
+      - file: "src/markdown-pages/location.md"
         label: "Location"  
         name: "location"
         widget: "object"
@@ -26,8 +26,8 @@ collections:
             widget: "object"
             fields:
               - {label: "Sunday", name: "sun", widget: "string"}
-              - {label: "Mon-Tues", name: "mon-tue", widget: "string"}
-              - {label: "Wed-Thurs", name: "wed-thu", widget: "string"}
+              - {label: "Mon-Tues", name: "mon_tue", widget: "string"}
+              - {label: "Wed-Thurs", name: "wed_thu", widget: "string"}
               - {label: "Friday", name: "fri", widget: "string"}
               - {label: "Saturday", name: "sat", widget: "string"}
           

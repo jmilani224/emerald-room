@@ -1,8 +1,8 @@
 ---
 title: location
 sun: Closed
-mon-tue: 10AM - 7PM
-wed-thu: 10AM - 8PM
+mon_tue: 10AM - 7PM
+wed_thu: 10AM - 8PM
 fri: 9AM - 8PM
 sat: 9AM - 5PM
 ---
