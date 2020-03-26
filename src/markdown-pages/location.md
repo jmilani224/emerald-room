@@ -1,7 +1,7 @@
 ---
 title: location
 hours:
-  sun: Closed
+  sun: Open!
   mon-tue: 10AM - 7PM
   wed-thu: 10AM - 8PM
   fri: 9AM - 8PM
