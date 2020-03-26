@@ -25,9 +25,9 @@ collections:
             name: "hours"
             widget: "object"
             fields:
-              - {label: "Sunday", name: "sun", widget: "string"}
-              - {label: "Mon-Tues", name: "mon_tue", widget: "string"}
-              - {label: "Wed-Thurs", name: "wed_thu", widget: "string"}
-              - {label: "Friday", name: "fri", widget: "string"}
-              - {label: "Saturday", name: "sat", widget: "string"}
+              - {label: "Sunday", name: "sun", widget: "string", default: "Closed"}
+              - {label: "Mon-Tues", name: "mon-tue", widget: "string", default: "10AM - 7PM"}
+              - {label: "Wed-Thurs", name: "wed-thu", widget: "string", default: "10AM - 8PM"}
+              - {label: "Friday", name: "fri", widget: "string", default: "9AM - 8PM"}
+              - {label: "Saturday", name: "sat", widget: "string", default: "9AM - 5PM"}
           
