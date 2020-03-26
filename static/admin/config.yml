@@ -24,10 +24,10 @@ collections:
             name: "hours"
             widget: "object"
             fields:
-              - {label: "Sunday", name: "sun", widget: "string"}
-              - {label: "Mon-Tues", name: "mon_tue", widget: "string"}
-              - {label: "Wed-Thurs", name: "wed_thu", widget: "string"}
-              - {label: "Friday", name: "fri", widget: "string", default: "9AM - 8PM"}
-              - {label: "Saturday", name: "sat", widget: "string", default: "9AM - 5PM"}
+              - {label: "Sunday", name: "sun", widget: "string", required: "false"}
+              - {label: "Mon-Tues", name: "mon_tue", widget: "string", required: "false"}
+              - {label: "Wed-Thurs", name: "wed_thu", widget: "string", required: "false"}
+              - {label: "Friday", name: "fri", widget: "string", required: "false"}
+              - {label: "Saturday", name: "sat", widget: "string", required: "false"}
           - {label: "Address", name: "body", widget: "markdown"}
           
