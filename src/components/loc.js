@@ -8,19 +8,20 @@ const Loc = () => (
   
   <StaticQuery
   query={graphql`
-    {
-      markdownRemark(frontmatter: {title: {eq: "location"}}) {
-        frontmatter {
-          sun
-          sat
-          mon_tue
-          wed_thu
+  {
+    markdownRemark(frontmatter: {title: {eq: "location"}}) {
+      frontmatter {
+        hours {
           fri
+          mon_tue
+          sat
+          sun
+          wed_thu
         }
-        html
       }
     }
-  `}
+  }
+`}
       render={data => 
         <div id="loc" className={locStyles.container}>
         <h1 className={locStyles.locH1}>Location</h1>
@@ -35,23 +36,23 @@ const Loc = () => (
                         <table className={locStyles.hoursTable}>
                         <tr>
                             <td>Sun</td>
-                            <td>{data.markdownRemark.frontmatter.sun}</td>
+                            <td>{data.markdownRemark.frontmatter.hours.sun}</td>
                         </tr>
                         <tr>
                             <td>Mon - Tues</td>
-                            <td>{data.markdownRemark.frontmatter.mon_tue}</td>
+                            <td>{data.markdownRemark.frontmatter.hours.mon_tue}</td>
                         </tr>
                         <tr>
                             <td>Wed - Thurs</td>
-                            <td>{data.markdownRemark.frontmatter.wed_thu}</td>
+                            <td>{data.markdownRemark.frontmatter.hours.wed_thu}</td>
                         </tr>
                         <tr>
                             <td>Fri</td>
-                            <td>{data.markdownRemark.frontmatter.fri}</td>
+                            <td>{data.markdownRemark.frontmatter.hours.fri}</td>
                         </tr>
                         <tr>
                             <td>Sat</td>
-                            <td>{data.markdownRemark.frontmatter.sat}</td>
+                            <td>{data.markdownRemark.frontmatter.hours.sat}</td>
                         </tr>
                         </table>
                     </div> 
