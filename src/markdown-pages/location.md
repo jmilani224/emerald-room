@@ -1,16 +1,11 @@
 ---
 title: location
-sun: Closed
-mon_tue: 10AM - 7PM
-wed_thu: 10AM - 8PM
-fri: 9AM - 8PM
-sat: 9AM - 5PM
 hours:
   sun: Closed
-  mon-tue: Closed
-  wed-thu: Closed
-  fri: Closed
-  sat: Closed
+  mon_tue: 10AM - 7PM
+  wed_thu: 10AM - 8PM
+  fri: 9AM - 8PM
+sat: 9AM - 5PM
 ---
 ## Addres
 
