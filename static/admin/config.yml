@@ -25,8 +25,8 @@ collections:
             widget: "object"
             fields:
               - {label: "Sunday", name: "sun", widget: "string", required: "false"}
-              - {label: "Mon-Tues", name: "mon_tue", widget: "string", required: "false"}
-              - {label: "Wed-Thurs", name: "wed_thu", widget: "string", required: "false"}
+              - {label: "Mon-Tues", name: "mon-tue", widget: "string", required: "false"}
+              - {label: "Wed-Thurs", name: "wed-thu", widget: "string", required: "false"}
               - {label: "Friday", name: "fri", widget: "string", required: "false"}
               - {label: "Saturday", name: "sat", widget: "string", required: "false"}
           - {label: "Address", name: "body", widget: "markdown"}
