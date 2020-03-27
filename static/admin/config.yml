@@ -8,6 +8,7 @@ logo_url: "https://d33wubrfki0l68.cloudfront.net/e7bff93bed13616df27fa4426b8d288
 collections:
   - label: "Main Sections"
     name: "pages"
+    description: "Click below to edit the content in the these website sections."
     files:
       - file: "src/markdown-pages/about.md"
         label: "About"
@@ -20,6 +21,7 @@ collections:
         name: "location"
         widget: "object"
         fields:
+          - {label: "Address", name: "body", widget: "markdown"}
           - label: "Hours"
             name: "hours"
             widget: "object"
@@ -29,9 +31,9 @@ collections:
               - {label: "Wed-Thurs", name: "wed-thu", widget: "string", required: "false"}
               - {label: "Friday", name: "fri", widget: "string", required: "false"}
               - {label: "Saturday", name: "sat", widget: "string", required: "false"}
-          - {label: "Address", name: "body", widget: "markdown"}
   - label: "Services"
     name: "service-cards"
+    description: 'Click below to edit a specific "Services" card, or create a new one.'
     folder: "src/markdown-pages/services-cards"
     create: true
     fields:
