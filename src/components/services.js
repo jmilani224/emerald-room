@@ -8,21 +8,23 @@ import ImgGallery from './element-components/imggallery'
 const Services = () => {
 
     const data = useStaticQuery(graphql`
-      {
-        allMarkdownRemark(filter: {frontmatter: {class: {eq: "service-card"}}}) {
-          edges {
-            node {
-              html
-              frontmatter {
-                class
-                emoji
-                title
-              }
+    {
+      allMarkdownRemark(
+        filter: {frontmatter: {class: {eq: "service-card"}}},
+        sort: {fields: frontmatter___order, order: ASC}) {
+        edges {
+          node {
+            html
+            frontmatter {
+              title
+              class
+              emoji
             }
           }
         }
       }
-    `)
+    }
+  `)
     return ( 
         <div>
             <div id="services" className={servicesStyles.servicesContainer}>

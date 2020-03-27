@@ -2,6 +2,7 @@
 title: Treatments
 class: service-card
 emoji: 🌱
+order: 6
 
 ---
 

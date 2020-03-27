@@ -1,7 +1,8 @@
 ---
-title: cosmetics-services
+title: Cosmetics
 class: service-card
 emoji: 💄
+order: 5
 
 ---
 

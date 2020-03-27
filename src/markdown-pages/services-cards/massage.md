@@ -2,6 +2,7 @@
 title: Massage
 class: service-card
 emoji: 💆‍♂️
+order: 4
 
 ---
 

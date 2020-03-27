@@ -2,6 +2,7 @@
 title: Gents
 class: service-card
 emoji: 💇‍♂
+order: 1
 
 ---
 

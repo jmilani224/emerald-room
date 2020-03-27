@@ -2,6 +2,7 @@
 title: Waxing
 class: service-card
 emoji: 👙
+order: 7
 
 ---
 
