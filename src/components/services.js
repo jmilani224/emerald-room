@@ -26,7 +26,7 @@ const Services = () => {
     }
   `)
     return ( 
-        <div>
+        <div className={servicesStyles.gallery}>
             <div id="services" className={servicesStyles.servicesContainer}>
                 <h1>Services</h1>
                 <div className={servicesStyles.cardContainer}>  
