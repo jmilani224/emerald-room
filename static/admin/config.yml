@@ -34,6 +34,7 @@ collections:
     name: "service-cards"
     folder: "src/markdown-pages/services-cards"
     create: true
+    widget: "object"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Class", name: "class", widget: "hidden", default: "service-card"}
