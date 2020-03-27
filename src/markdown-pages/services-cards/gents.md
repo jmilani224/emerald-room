@@ -1,7 +1,7 @@
 ---
 title: gents-services
-
-card: Gents
+class: service-card
+header: Gents
 emoji: 💇‍♂
 
 ---

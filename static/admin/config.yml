@@ -30,4 +30,13 @@ collections:
               - {label: "Friday", name: "fri", widget: "string", required: "false"}
               - {label: "Saturday", name: "sat", widget: "string", required: "false"}
           - {label: "Address", name: "body", widget: "markdown"}
-          
+  - label: "Services"
+    name: "service-cards"
+    folder: "src/markdown-pages/services-cards"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Class", name: "class", widget: "hidden", default: "service-card"}
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Emoji", name: "emoji", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
