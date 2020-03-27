@@ -1,7 +1,6 @@
 ---
-title: treatments-services
+title: Treatments
 class: service-card
-header: Treatments
 emoji: 🌱
 
 ---

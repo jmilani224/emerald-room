@@ -1,7 +1,6 @@
 ---
-title: massage-services
+title: Massage
 class: service-card
-header: Massage
 emoji: 💆‍♂️
 
 ---

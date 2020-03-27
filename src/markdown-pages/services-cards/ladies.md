@@ -1,7 +1,6 @@
 ---
-title: ladies-services
+title: Ladies
 class: service-card
-header: Ladies
 emoji: 💇‍♀
 
 ---

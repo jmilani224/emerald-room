@@ -1,7 +1,6 @@
 ---
-title: waxing-services
+title: Waxing
 class: service-card
-header: Waxing
 emoji: 👙
 
 ---

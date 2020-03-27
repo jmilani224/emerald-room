@@ -1,7 +1,6 @@
 ---
 title: Color
 class: service-card
-header: Color
 emoji: 👩‍🎤
 
 ---

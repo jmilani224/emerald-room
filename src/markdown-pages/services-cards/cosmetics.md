@@ -1,7 +1,6 @@
 ---
 title: cosmetics-services
 class: service-card
-header: Cosmetics
 emoji: 💄
 
 ---

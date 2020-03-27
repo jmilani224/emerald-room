@@ -16,7 +16,7 @@ const Services = () => {
               frontmatter {
                 class
                 emoji
-                header
+                title
               }
             }
           }
@@ -29,7 +29,7 @@ const Services = () => {
                 <h1>Services</h1>
                 <div className={servicesStyles.cardContainer}>  
                 {data.allMarkdownRemark.edges.map(card => (
-                    <Card emoji={card.node.frontmatter.emoji} title={card.node.frontmatter.header}>
+                    <Card emoji={card.node.frontmatter.emoji} title={card.node.frontmatter.title}>
                         <div dangerouslySetInnerHTML={{__html:card.node.html}}>
                         </div>
                     </Card>
