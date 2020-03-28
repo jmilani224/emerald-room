@@ -1,5 +1,6 @@
 ---
 title: location
+h1: Location
 hours:
   sun: Closed
   mon-tue: 10AM - 7PM

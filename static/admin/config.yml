@@ -21,6 +21,7 @@ collections:
         name: "location"
         widget: "object"
         fields:
+          - {label: "Headline", name: "h1", widget: "string"}
           - label: "Hours"
             name: "hours"
             widget: "object"

@@ -11,6 +11,7 @@ const Loc = () => (
   {
     markdownRemark(frontmatter: {title: {eq: "location"}}) {
       frontmatter {
+        h1
         hours {
           fri
           mon_tue
@@ -25,7 +26,7 @@ const Loc = () => (
 `}
       render={data => 
         <div id="loc" className={locStyles.container}>
-        <h1 className={locStyles.locH1}>Location</h1>
+        <h1 className={locStyles.locH1}>{data.markdownRemark.frontmatter.h1}</h1>
             <div className={locStyles.main}>
                 
                 <div className={locStyles.left}>

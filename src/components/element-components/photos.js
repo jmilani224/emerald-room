@@ -1,3 +1,5 @@
+import logo from "../../images/logo.png"
+
 export const photos = [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
@@ -40,7 +42,7 @@ export const photos = [
       height: 3
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      src: logo,
       width: 4,
       height: 3
     }

@@ -6,8 +6,9 @@ media_folder: "/src/images" # Media files will be stored in the repo under image
 site_url: "https://dev.emeraldroomsalon.com/" # !Change to https://emeraldroomsalon.com/ when merging dev branch to master
 logo_url: "https://d33wubrfki0l68.cloudfront.net/e7bff93bed13616df27fa4426b8d288829d423ba/3e51d/static/logo-f3079e02981bbd16bc1afcb4f9c91c7f.png"
 collections:
-  - label: "Homepage"
+  - label: "Main Sections"
     name: "pages"
+    description: "Edit website section content."
     files:
       - file: "src/markdown-pages/about.md"
         label: "About"
@@ -20,6 +21,7 @@ collections:
         name: "location"
         widget: "object"
         fields:
+          - {label: "Headline", name: "h1", widget: "string"}
           - label: "Hours"
             name: "hours"
             widget: "object"
@@ -32,11 +34,12 @@ collections:
           - {label: "Address", name: "body", widget: "markdown"}
   - label: "Services"
     name: "service-cards"
+    description: 'Edit or create a new "Services" card.'
     folder: "src/markdown-pages/services-cards"
     create: true
     fields:
-      - {label: "Order", name: "order", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "order", widget: "number"}
+      - {label: "Service Category", name: "title", widget: "string"}
       - {label: "Class", name: "class", widget: "hidden", default: "service-card"}
       - {label: "Emoji", name: "emoji", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Services", name: "body", widget: "markdown"}
