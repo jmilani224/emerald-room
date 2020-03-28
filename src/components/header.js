@@ -4,6 +4,10 @@ import ReactDOM from 'react-dom'
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import headerStyles from "./header.module.css"
 
+ReactDOM.findDOMNode(this.refs['header'])
+ 
+const pos = ReactDOM.getBoundingClientRect(); //outputs header
+
 
 class Header extends React.Component {
 
@@ -12,7 +16,9 @@ class Header extends React.Component {
 
     return (
       <div 
-        className={headerStyles.stickyContainer}>
+        ref='header'
+        className={headerStyles.stickyContainer}
+        onScroll={}>
         <header className={headerStyles.header}>
           <div className={headerStyles.title} onClick={() => scrollTo('#home')} onKeyDown={() => scrollTo('#home')}>
             THE EMERALD ROOM
@@ -30,6 +36,20 @@ class Header extends React.Component {
       </div>
     )
   }
+
+const 
+const bodySec = document.body;
+let bodyPos;
+let header;
+window.addEventListener('scroll', ()=>{
+    header = document.querySelector('header');
+    bodyPos = bodySec.getBoundingClientRect().y;
+    if (bodyPos < -200 ) {
+        header.style.backgroundColor = "#ffffff";
+    } else {
+        header.style.backgroundColor = "transparent";
+    }
+ });
 
 }
 
