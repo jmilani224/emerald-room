@@ -8,7 +8,7 @@ logo_url: "https://d33wubrfki0l68.cloudfront.net/e7bff93bed13616df27fa4426b8d288
 collections:
   - label: "Main Sections"
     name: "pages"
-    description: "Click below to edit the content in the these website sections."
+    description: "Edit website section content."
     files:
       - file: "src/markdown-pages/about.md"
         label: "About"
@@ -33,7 +33,7 @@ collections:
               - {label: "Saturday", name: "sat", widget: "string", required: "false"}
   - label: "Services"
     name: "service-cards"
-    description: 'Click below to edit a specific "Services" card, or create a new one.'
+    description: 'Edit or create new "Services" cards.'
     folder: "src/markdown-pages/services-cards"
     create: true
     fields:
