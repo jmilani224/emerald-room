@@ -1,6 +1,6 @@
 ---
 title: pop-up
-show: false
+show: true
 ---
 
 # Temporarily Closed
