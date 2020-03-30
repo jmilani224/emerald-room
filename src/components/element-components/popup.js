@@ -6,13 +6,13 @@ import popupStyles from "./popup.module.css"
 const PopUp = (props) => {
     const data = useStaticQuery(graphql`
     {
-    markdownRemark(frontmatter: {title: {eq: "pop-up"}}) {
-        frontmatter {
-        title
-        show
+        markdownRemark(frontmatter: {title: {eq: "pop-up"}}) {
+            frontmatter {
+            title
+            show
+            }
+            html
         }
-        html
-    }
 
     }
     `)  
