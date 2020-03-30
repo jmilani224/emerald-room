@@ -6,12 +6,12 @@ media_folder: "/src/images" # Media files will be stored in the repo under image
 site_url: "https://dev.emeraldroomsalon.com/" # !Change to https://emeraldroomsalon.com/ when merging dev branch to master
 logo_url: "https://d33wubrfki0l68.cloudfront.net/e7bff93bed13616df27fa4426b8d288829d423ba/3e51d/static/logo-f3079e02981bbd16bc1afcb4f9c91c7f.png"
 collections:
-  - label: Pop-up
+  - label: Pop-ups
     name: pop-up
     description: "Web page takeover pop-up."
     files: 
       - file: "src/markdown-pages/popup.md"
-        label: "Pop-up"
+        label: "Takeover pop-up"
         name: pop-up
         fields:
           - {label: "Show", name: "show", widget: "boolean"}
