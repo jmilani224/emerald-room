@@ -1,0 +1,45 @@
+.container-open {
+    background-color: #2d2d2da3;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-closed {
+    display: none;
+}
+
+.box {
+    background-color: var(--main-color);
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    height: auto;
+    padding: 4rem;
+
+}
+
+.x {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.container-open h1 {
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.container-open p {
+    font-size: 1rem;
+}

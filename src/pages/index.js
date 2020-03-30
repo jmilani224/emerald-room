@@ -5,6 +5,7 @@ import {Helmet} from "react-helmet";
 import icon from "../../static/admin/favicon.png"
 
 import Header from "../components/header"
+import PopUp from "../components/element-components/popup.js"
 import Hero from "../components/hero.js"
 import About from "../components/about.js"
 import Loc from "../components/loc.js"
@@ -27,6 +28,8 @@ const IndexPage = () => {
 
                 <Header />
 
+                <PopUp />
+
                 <Hero />
                 
                 <About />
@@ -39,7 +42,6 @@ const IndexPage = () => {
 
             </div>
     )
-    
 }
 
 export default IndexPage
