@@ -17,7 +17,7 @@ const PopUp = (props) => {
     }
     `)
     
-    const initialModalState = !props.didVisit ? {open: data.markdownRemark.frontmatter.show} : {open: false}
+    const initialModalState = props.didVisit ? {open: false} : {open: data.markdownRemark.frontmatter.show}
     const [modal, setModal] = useState(initialModalState)
 
     const handleModal = event => {
