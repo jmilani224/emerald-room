@@ -13,6 +13,15 @@ import Services from "../components/services.js"
 import Book from "../components/book.js"
 
 const IndexPage = () => {
+    const newCookie = "visited=true; max-age=604800";
+    let didVisit;
+    
+    if (!document.cookie.split(';').some((item) => item.trim().startsWith('visited='))) { //check to see if a cookie has been placed, if not this is a 'first visit'
+        document.cookie = newCookie; //place cookie
+        didVisit = false;
+    } else {
+        didVisit = true;
+    }
     
     return (
             <div>
@@ -26,7 +35,7 @@ const IndexPage = () => {
                     </link>
                 </Helmet>
 
-                <PopUp />
+                <PopUp didVisit={didVisit}/>
                 
                 <Header />
 
