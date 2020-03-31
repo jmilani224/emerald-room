@@ -51,5 +51,18 @@
         height: 100vh;
     }
 
+    .x {
+        font-size: 1.8rem;
+        top: 2rem;
+        right: 2rem;
+    }
 
+    .container-open h1 {
+        font-size: 2.4rem;
+    }
+
+    .container-open p {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
 }
