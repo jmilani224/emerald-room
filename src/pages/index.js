@@ -26,9 +26,9 @@ const IndexPage = () => {
                     </link>
                 </Helmet>
 
-                <Header />
-
                 <PopUp />
+                
+                <Header />
 
                 <Hero />
                 

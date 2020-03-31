@@ -2,7 +2,7 @@
 title: pop-up
 show: true
 ---
-# Temporarily Closed
+# We'll Be Back!
 
 Thank you so much for your support. To help slow the spread of COVID-19, the state of Ohio has ordered that salons and barbershops close for the time being.
 
