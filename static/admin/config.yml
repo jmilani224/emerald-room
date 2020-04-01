@@ -15,7 +15,7 @@ collections:
         name: pop-up
         fields:
           - {label: "On/Off", name: "show", widget: "boolean"}
-          - {label: "Wait how many days until showing a visitor this pop-up again?", name: "show", widget: "number"}
+          - {label: "Wait how many days until showing a visitor this pop-up again?", name: "expirationInDays", widget: "number"}
           - {label: "Content", name: "body", widget: "markdown"}
   - label: "Main Sections"
     name: "pages"
