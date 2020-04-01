@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useState, useEffect} from "react"
 
 import '../styles/index.css'
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet"
 import icon from "../../static/admin/favicon.png"
 
 import Header from "../components/header"
@@ -13,18 +13,19 @@ import Services from "../components/services.js"
 import Book from "../components/book.js"
 
 const IndexPage = () => {
+
+    const [cookie, setCookie] = useState({isCookie:true})
     const newCookie = "visited=true; max-age=604800";
-    let didVisit;
     
-    if (document.cookie.split(';').some((item) => item.trim().startsWith('visited='))) { //check to see if a cookie has been placed, if not this is a 'first visit'
-        didVisit = true;
-    } else {
-        document.cookie = newCookie; //place cookie
-        didVisit = false;
-        
-    }
-    
-    return (
+    useEffect(() => {
+        if (!document.cookie.split(';').some((item) => item.trim().startsWith('visited='))) { //check to see if a cookie has been placed, if not this is a 'first visit'
+            setCookie({isCookie:false});
+            document.cookie = newCookie; //place cookie on first visit
+            
+        }
+      }, [])
+
+      return (
             <div>
                 <Helmet>
                     <meta charSet="utf-8" />
@@ -36,7 +37,7 @@ const IndexPage = () => {
                     </link>
                 </Helmet>
 
-                <PopUp didVisit={didVisit}/>
+                <PopUp cookie={cookie.isCookie}/>
                 
                 <Header />
 

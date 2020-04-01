@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import popupStyles from "./popup.module.css"
 
@@ -17,8 +17,13 @@ const PopUp = (props) => {
     }
     `)
     
-    const initialModalState = props.didVisit ? {open: false} : {open: data.markdownRemark.frontmatter.show}
+    const initialModalState = props.cookie ? {open: false} : {open: data.markdownRemark.frontmatter.show}
+    
     const [modal, setModal] = useState(initialModalState)
+
+    useEffect(() => {
+        setModal(props.cookie ? {open: false} : {open: data.markdownRemark.frontmatter.show})
+      }, [props.cookie]);
 
     const handleModal = event => {
         setModal({open: false})
