@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import '../styles/index.css'
 import {Helmet} from "react-helmet"
@@ -14,8 +15,19 @@ import Book from "../components/book.js"
 
 const IndexPage = () => {
 
+    const data = useStaticQuery(graphql`
+    {
+        markdownRemark(frontmatter: {title: {eq: "pop-up"}}) {
+            frontmatter {
+                expirationInDays
+            }
+        }
+
+    }
+    `)
+
     const [cookie, setCookie] = useState({isCookie:true})
-    const newCookie = "visited=true; max-age=604800";
+    const newCookie = `visited=true; max-age=${data.markdownRemark.frontmatter.expirationInDays * 86400}`; 
     
     useEffect(() => {
         if (!document.cookie.split(';').some((item) => item.trim().startsWith('visited='))) { //check to see if a cookie has been placed, if not this is a 'first visit'
