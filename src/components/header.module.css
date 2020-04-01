@@ -5,7 +5,17 @@
     z-index: 1;
 }
 
-.header {
+.header-clear {
+    padding: 1rem 0 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ease all 0.5s;
+}
+
+.header-opaque {
+    background-color: #ffffff;
     padding: 1rem 0 1rem 0rem;
     display: flex;
     justify-content: center;

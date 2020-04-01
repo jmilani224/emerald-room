@@ -1,18 +1,30 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import headerStyles from "./header.module.css"
 
 
-class Header extends React.Component {
+const Header = () => {
 
+const [navBackground, setNavBackground] = useState({opaque:false})
 
-  render () {
+const navOnScroll = () => {
+    if (window.scrollY > 200){
+    setNavBackground({opaque:true})
+  } else {
+    setNavBackground({opaque:false})
+  }
+}
+
+useEffect(() => {
+  window.addEventListener('scroll', navOnScroll)
+
+}, [navBackground.opaque])
 
     return (
       <div 
         className={headerStyles.stickyContainer}>
-        <header className={headerStyles.header}>
+        <header className={navBackground.opaque ? headerStyles.headerOpaque : headerStyles.headerClear}>
           <div className={headerStyles.title} onClick={() => scrollTo('#home')} onKeyDown={() => scrollTo('#home')}>
             THE EMERALD ROOM
           </div>
@@ -28,7 +40,7 @@ class Header extends React.Component {
       </header>
       </div>
     )
-  }
+
 }
 
 export default Header
