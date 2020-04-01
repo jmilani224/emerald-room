@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: dev # Branch to update (optional; defaults to master) !Change to master when merging dev branch to master
+  branch: master # Branch to update (optional; defaults to master) !Change to master when merging dev branch to master
 publish_mode: editorial_workflow
 media_folder: "/src/images" # Media files will be stored in the repo under images/uploads
-site_url: "https://dev.emeraldroomsalon.com/" # !Change to https://emeraldroomsalon.com/ when merging dev branch to master
+site_url: "https://emeraldroomsalon.com/" # !Change to https://emeraldroomsalon.com/ when merging dev branch to master
 logo_url: "https://d33wubrfki0l68.cloudfront.net/e7bff93bed13616df27fa4426b8d288829d423ba/3e51d/static/logo-f3079e02981bbd16bc1afcb4f9c91c7f.png"
 collections:
   - label: Pop-ups
