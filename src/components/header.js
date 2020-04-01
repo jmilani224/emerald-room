@@ -18,8 +18,7 @@ const navOnScroll = () => {
 
 useEffect(() => {
   window.addEventListener('scroll', navOnScroll)
-
-}, [navBackground.opaque])
+}, [])
 
     return (
       <div 
