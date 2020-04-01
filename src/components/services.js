@@ -17,7 +17,6 @@ const Services = () => {
             html
             frontmatter {
               title
-              class
               emoji
             }
           }
@@ -38,7 +37,7 @@ const Services = () => {
                 ))}
                 </div>
             </div>
-        <ImgGallery />
+        {/*<ImgGallery />*/}
         </div>       
     )
 
