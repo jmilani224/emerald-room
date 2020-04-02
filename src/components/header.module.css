@@ -5,7 +5,7 @@
     z-index: 1;
 }
 
-.header-clear {
+.header-clear, .header-opaque {
     padding: 1rem 0 1rem 0rem;
     display: flex;
     justify-content: center;
@@ -16,12 +16,6 @@
 
 .header-opaque {
     background-color: #ffffff;
-    padding: 1rem 0 1rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: ease all 0.5s;
 }
 
 .title {
