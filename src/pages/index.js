@@ -27,13 +27,12 @@ const IndexPage = () => {
     `)
 
     const [cookie, setCookie] = useState({isCookie:true})
-    const newCookie = `visited=true; max-age=${data.markdownRemark.frontmatter.expirationInDays * 86400}`; 
+    const newCookie = `visited=true; max-age=${data.markdownRemark.frontmatter.expirationInDays * 60 * 60 * 24}`; 
     
     useEffect(() => {
         if (!document.cookie.split(';').some((item) => item.trim().startsWith('visited='))) { //check to see if a cookie has been placed, if not this is a 'first visit'
             setCookie({isCookie:false});
             document.cookie = newCookie; //place cookie on first visit
-            
         }
       }, [])
 
