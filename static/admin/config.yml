@@ -45,7 +45,7 @@ collections:
           - {label: "Address", name: "body", widget: "markdown"}
   - label: "Services"
     name: "service-cards"
-    description: 'Edit or create a new "Services" card.'
+    description: 'Edit or create a new "Services" cards.'
     folder: "src/markdown-pages/services-cards"
     create: true
     fields:
