@@ -39,10 +39,6 @@ useEffect(() => {
       </header>
       </div>
     )
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 }
 
 export default Header
