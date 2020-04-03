@@ -4,10 +4,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import headerStyles from "./header.module.css"
 
 
-class Header extends React.Component {
-
-
-  render () {
+const Header = () => {
 
     return (
       <div 
@@ -28,7 +25,6 @@ class Header extends React.Component {
       </header>
       </div>
     )
-  }
 }
 
 export default Header
