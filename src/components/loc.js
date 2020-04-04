@@ -1,9 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import locStyles from "./loc.module.css"
 
-const Map = React.lazy(() => import('./element-components/map'));
+import Map from "./element-components/map"
 
 const Loc = () => {
   
@@ -62,9 +61,7 @@ const Loc = () => {
                 </div>
                 
                 <div id="map" className={locStyles.right}>
-                <React.Suspense fallback={<div>Loading...</div>}>
                   <Map />
-                </React.Suspense>
                 </div>
 
           </div>
