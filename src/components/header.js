@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import headerStyles from "./header.module.css"
 
-
 const Header = () => {
 
 const [navBackground, setNavBackground] = useState({opaque:false})
@@ -39,7 +38,6 @@ useEffect(() => {
       </header>
       </div>
     )
-
 }
 
 export default Header

@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import servicesStyles from "./services.module.css"
 import Card from "./element-components/card.js"
-import ImgGallery from './element-components/imggallery'
+import ImgGallery from "./element-components/imggallery"
 
 const Services = () => {
 
@@ -37,7 +37,7 @@ const Services = () => {
                 ))}
                 </div>
             </div>
-        {/*<ImgGallery />*/}
+            <ImgGallery /> 
         </div>       
     )
 

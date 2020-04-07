@@ -1,13 +1,12 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-
+import { useStaticQuery, graphql } from "gatsby"
 import locStyles from "./loc.module.css"
-import GoogleMapReact from 'google-map-react'
 
-const Loc = () => (
+import Map from "./element-components/map"
+
+const Loc = () => {
   
-  <StaticQuery
-  query={graphql`
+  const data = useStaticQuery(graphql`
   {
     markdownRemark(frontmatter: {title: {eq: "location"}}) {
       frontmatter {
@@ -23,8 +22,9 @@ const Loc = () => (
     html  
     }
   }
-`}
-      render={data => 
+  `)
+
+  return (
         <div id="loc" className={locStyles.container}>
         <h1 className={locStyles.locH1}>{data.markdownRemark.frontmatter.h1}</h1>
             <div className={locStyles.main}>
@@ -61,25 +61,14 @@ const Loc = () => (
                 </div>
                 
                 <div id="map" className={locStyles.right}>
-                        {(
-                        <GoogleMapReact
-                            bootstrapURLKeys={{ key: 'AIzaSyCWYgTnvAA3trKR7dFgpnGmBh-vAoM2OXA' }}
-                            defaultCenter={[41.4768626, -81.8081993]}
-                            defaultZoom={14}
-                        >
-                            <div
-                            className={locStyles.marker}
-                            lat={41.4768626}
-                            lng={-81.8081993}
-                            />
-                        </GoogleMapReact>
-                        )}
+                  <Map />
                 </div>
+
+          </div>
+
         </div>
+    )
 
-      </div>}
-    ></StaticQuery>
-
-  )
+}
   
   export default Loc
