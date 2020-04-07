@@ -37,7 +37,7 @@ const Services = () => {
                 ))}
                 </div>
             </div>
-              <ImgGallery /> 
+            <ImgGallery /> 
         </div>       
     )
 

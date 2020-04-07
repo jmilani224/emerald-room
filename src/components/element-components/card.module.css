@@ -1,5 +1,5 @@
 .card {
-    width: 220px;
+    width: 13rem;
     height: auto;
     background-color: #fff;
     font-weight: 400;
@@ -20,21 +20,26 @@
 }
 
 .header-group {
-    margin: 1em 0 1em 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .emoji {
-    font-size: 1.6rem;
-    margin-right: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .list-heading {
     font-weight: 400;
-    font-size: 0.85rem; 
-    display: inline;
+    font-size: 1.1rem; 
     text-align: center;
+    color: var(--main-color);
+    margin-bottom: 1rem;
 }
 
 .children {
-    color: var(--main-color)
+    color: var(--main-txt-color);
+    padding: 0 0.3rem 0 0.3rem
 }
