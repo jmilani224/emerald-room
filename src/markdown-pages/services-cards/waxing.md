@@ -1,9 +1,8 @@
 ---
+order: 5
 title: Waxing
 class: service-card
 emoji: 👙
-order: 7
-
 ---
 
 * Brow Shaping
