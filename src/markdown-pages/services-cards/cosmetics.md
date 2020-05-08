@@ -1,9 +1,8 @@
 ---
+order: 7
 title: Cosmetics
 class: service-card
 emoji: 💄
-order: 5
-
 ---
 
 * Basic Makeup
