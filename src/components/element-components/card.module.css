@@ -14,11 +14,6 @@
     transition: ease 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-2px);
-    transition: ease 0.3s;
-}
-
 .header-group {
     margin-top: 1em;
     display: flex;
