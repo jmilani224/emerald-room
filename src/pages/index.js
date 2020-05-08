@@ -56,12 +56,11 @@ const IndexPage = () => {
                 
                 <About />
 
-                <Loc />
-
                 <Services />
 
                 <Book />
 
+                <Loc />
             </div>
     )
 }
