@@ -1,9 +1,8 @@
 ---
+order: 3
 title: Massage
 class: service-card
 emoji: 💆‍♂️
-order: 4
-
 ---
 
 * Scalp
