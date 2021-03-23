@@ -12,6 +12,7 @@ import About from "../components/about.js"
 import Loc from "../components/loc.js"
 import Services from "../components/services.js"
 import Book from "../components/book.js"
+import BookFunc from "../components/bookFunc.js"
 
 const IndexPage = () => {
 
@@ -35,6 +36,15 @@ const IndexPage = () => {
             document.cookie = newCookie; //place cookie on first visit
         }
       }, [])
+
+      const [widgetLoaded, setWidgetLoaded] = useState(false)
+
+      useEffect(() => {
+          const vigaroWidget = document.querySelector('vagaro-container')
+          setWidgetLoaded(!!vigaroWidget)
+      }, [])
+
+      console.log(widgetLoaded)
 
       return (
             <div>
@@ -60,7 +70,9 @@ const IndexPage = () => {
 
                 <Services />
 
-                <Book />
+                {/* <Book /> */}
+
+                <BookFunc />
 
             </div>
     )
