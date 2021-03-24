@@ -70,7 +70,7 @@ const IndexPage = () => {
 
                 <Services />
 
-                {/* <Book /> */}
+                <Book />
 
                 <BookFunc />
 
