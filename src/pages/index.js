@@ -36,6 +36,15 @@ const IndexPage = () => {
         }
       }, [])
 
+      const [widgetLoaded, setWidgetLoaded] = useState(false)
+
+      useEffect(() => {
+          const vigaroWidget = document.querySelector('vagaro-container')
+          setWidgetLoaded(!!vigaroWidget)
+      }, [])
+
+      console.log(widgetLoaded)
+
       return (
             <div>
                 <Helmet>
