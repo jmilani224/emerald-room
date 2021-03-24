@@ -4,19 +4,26 @@ import bookStyles from "./book.module.css"
 
 const BookFunc = () => {
 
+  const [widgetLoading, setWidgetLoading] = useState(true)
+
   const widget = useRef()
 
-  function loadWidget() {
+  async function loadWidget() {
     const script=document.createElement('script')
     script.type = "text/javascript"
-    script.src="https://www.vagaro.com/resources/WidgetEmbeddedLoader/OZqnCJ4nEJacT3qmV35y6JuPlXoSlXYO61Cq7fYO61WO4pkUcPCu7gevEhAJDXwOW?v=zxOBNHDBQpkWELAcx8OJg8LPozVGMfY9neinaAn9jw1#"
+    script.src="https://www.vagaro.com/resources/WidgetEmbeddedLoader/OZqnCJ4nEJacT3qmV35y6JuPlXoSlXYO61Cq7fYO61WO4pkUcPCu7gevEhAJDXwOW?v=zxOBNHDBQpkWELAcx8OJg8LPozVGMfY9neinaAn9jw1#?r=SOME_RANDOM_VALUE"
     script.async=true;
-    widget.current.appendChild(script)
+    await widget.current.appendChild(script)
+    setWidgetLoading(false)
   }
 
   useEffect(() => {
     loadWidget()
   }, [])
+
+  useEffect(() => {
+    !widgetLoading && console.log('done loading')
+  }, [widgetLoading])
 
     return (
       <div id="book" className={bookStyles.bookContainer}>
