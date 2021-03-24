@@ -5,23 +5,18 @@ import bookStyles from "./book.module.css"
 const BookFunc = () => {
 
   const widget = useRef()
-  const [widgetLoaded, setWidgetLoaded] = useState(false)
 
-  async function loadWidget() {
+  function loadWidget() {
     const script=document.createElement('script')
+    script.type = "text/javascript"
     script.src="https://www.vagaro.com/resources/WidgetEmbeddedLoader/OZqnCJ4nEJacT3qmV35y6JuPlXoSlXYO61Cq7fYO61WO4pkUcPCu7gevEhAJDXwOW?v=zxOBNHDBQpkWELAcx8OJg8LPozVGMfY9neinaAn9jw1#"
     script.async=true;
-    await widget.current.appendChild(script)
-    
-    const vigaroWidget = document.querySelector('vagaro-container')
-    setWidgetLoaded(!!vigaroWidget)
+    widget.current.appendChild(script)
   }
 
   useEffect(() => {
     loadWidget()
   }, [])
-
-  console.log(widgetLoaded)
 
     return (
       <div id="book" className={bookStyles.bookContainer}>
