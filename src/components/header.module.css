@@ -31,6 +31,11 @@ li {
     margin-bottom: 0;
     text-justify: center;
 }
+li a {
+    text-decoration: none;
+    text-justify: center;
+    color: var(--main-txt-color);
+}
 
 .nav-list {
     display: flex;
