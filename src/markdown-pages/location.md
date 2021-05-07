@@ -6,9 +6,7 @@ hours:
   mon-tue: 10 AM - 7 PM
   wed-thu: 12 PM - 8 PM
   fri: 10 AM - 7 PM
-  sat: 12 PM - 5
-    PM                                                                                                         *(Hours
-    of operation are based on stylist discretion)*
+  sat: 12 PM - 5 PM
 ---
 *(Hours of operation are based on stylist discretion)*
 
