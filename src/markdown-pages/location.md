@@ -8,10 +8,6 @@ hours:
   fri: 10 AM - 7 PM
   sat: 12 PM - 5 PM
 ---
-*(Hours of operation are based on stylist discretion)*
-
-
-
 
 
 ## Location
@@ -21,3 +17,13 @@ hours:
 Lakewood, OH 44107
 
 Phone: (216)339-9978
+
+> #### `  `
+>
+> #### `   `
+>
+> ####  
+>
+>  
+
+*(Hours of operation are based on stylist discretion)*
