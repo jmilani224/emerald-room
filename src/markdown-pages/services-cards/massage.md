@@ -1,6 +1,6 @@
 ---
 order: 3
-title: Massage
+title: Massages, Facials & Treatments
 class: service-card
 emoji: " "
 ---
