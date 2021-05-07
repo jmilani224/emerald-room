@@ -1,14 +1,14 @@
 ---
 title: location
-h1: Hours of Operation
+h1: Hours of Operation <br>  (Hours of operation are based on stylist discretion)
 hours:
   sun: Closed
-  mon-tue: "10AM - 7PM "
-  wed-thu: 10AM - 7PM
+  mon-tue: 10AM - 7PM
+  wed-thu: 12PM - 8PM
   fri: 10AM - 7PM
-  sat: 12-5
+  sat: "12PM - 5PM "
 ---
-######   (Hours of operation based on stylist discretion)
+###### (Hours of operation are based on stylist discretion)
 
 ## Location
 
