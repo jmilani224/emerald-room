@@ -1,6 +1,7 @@
 ---
 title: location
-h1: Hours of Operation <br>  (Hours of operation are based on stylist discretion)
+h1: "Hours of Operation <br>  (Hours of operation are based on stylist
+  discretion) <br> "
 hours:
   sun: Closed
   mon-tue: 10AM - 7PM
