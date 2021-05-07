@@ -10,6 +10,10 @@ hours:
 ---
 *(Hours of operation are based on stylist discretion)*
 
+
+
+
+
 ## Location
 
 15721 Madison Ave, 
