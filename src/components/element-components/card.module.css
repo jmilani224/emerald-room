@@ -38,3 +38,11 @@
     color: var(--main-txt-color);
     padding: 0 0.3rem 0 0.3rem
 }
+
+.card p {
+    margin-bottom: 0;
+}
+
+.card li {
+    margin-bottom: 1rem;
+}
