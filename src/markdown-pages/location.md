@@ -17,13 +17,3 @@ hours:
 Lakewood, OH 44107
 
 Phone: (216)339-9978
-
-> #### `  `
->
-> #### `   `
->
-> ####  
->
->  
-
-*(Hours of operation are based on stylist discretion)*

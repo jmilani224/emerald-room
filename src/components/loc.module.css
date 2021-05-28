@@ -35,6 +35,10 @@
     color: var(--main-color);
 }
 
+.head {
+    margin-bottom: 0.5rem;
+}
+
 .con-node p {
     font-weight: 400;
     font-size: 0.8rem;
