@@ -2,17 +2,21 @@ import React from 'react';
 
 import cardStyles from './card.module.css'
 
-const  Card = (props) => {
+const  Card = ({ emoji, title, children, AccordionItem, AccordionButton, AccordionPanel }) => {
     return (  
-        <div className={cardStyles.card}>
-            <div className={cardStyles.headerGroup}>
-                <span className={cardStyles.emoji}>{props.emoji}</span>
-                <h2 className={cardStyles.listHeading}>{props.title}</h2>
+        <AccordionItem>
+            <div className={cardStyles.card}>
+                <AccordionButton>
+                    <div className={cardStyles.headerGroup}>
+                        <span className={cardStyles.emoji}>{emoji}</span>
+                        <h2 className={cardStyles.listHeading}>{title}</h2>
+                    </div>
+                </AccordionButton>
+                <div className={cardStyles.children}>
+                <AccordionPanel>{children}</AccordionPanel>
+                </div>
             </div>
-            <div className={cardStyles.children}>
-                {props.children}
-            </div>
-        </div>
+        </AccordionItem>
     );
 }
  

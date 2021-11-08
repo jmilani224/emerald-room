@@ -14,6 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@reach/accordion": "^0.16.1",
     "gatsby": "^2.19.7",
     "gatsby-plugin-react-helmet": "^3.2.0",
     "gatsby-plugin-sharp": "^2.4.5",

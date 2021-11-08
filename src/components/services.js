@@ -4,6 +4,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import servicesStyles from "./services.module.css"
 import Card from "./element-components/card.js"
 import ImgGallery from "./element-components/imggallery"
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+} from "@reach/accordion";
+//import "@reach/accordion/styles.css";
 
 const Services = () => {
 
@@ -28,13 +35,21 @@ const Services = () => {
         <div className={servicesStyles.gallery}>
             <div id="services" className={servicesStyles.servicesContainer}>
                 <h1>Services</h1>
-                <div className={servicesStyles.cardContainer}>  
-                {data.allMarkdownRemark.edges.map(card => (
-                    <Card emoji={card.node.frontmatter.emoji} title={card.node.frontmatter.title}>
-                        <div dangerouslySetInnerHTML={{__html:card.node.html}}>
-                        </div>
-                    </Card>
-                ))}
+                <div className={servicesStyles.cardContainer}> 
+                  <Accordion collapsible>
+                    {data.allMarkdownRemark.edges.map(card => (
+                        <Card
+                        emoji={card.node.frontmatter.emoji}
+                        title={card.node.frontmatter.title}
+                        AccordionButton={AccordionButton}
+                        AccordionItem={AccordionItem}
+                        AccordionPanel={AccordionPanel}
+                        >
+                            <div dangerouslySetInnerHTML={{__html:card.node.html}}>
+                            </div>
+                        </Card>
+                    ))}
+                  </Accordion> 
                 </div>
             </div>
             {/*<ImgGallery />*/} 

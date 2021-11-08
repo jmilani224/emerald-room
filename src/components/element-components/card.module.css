@@ -19,6 +19,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    
 }
 
 .emoji {
@@ -47,4 +49,9 @@
 
 .card li {
     margin-bottom: 1rem;
+}
+
+.card button {
+    border: none;
+    background-color: transparent;
 }
