@@ -10,7 +10,6 @@ import {
   AccordionButton,
   AccordionPanel,
 } from "@reach/accordion";
-//import "@reach/accordion/styles.css";
 
 const Services = () => {
 

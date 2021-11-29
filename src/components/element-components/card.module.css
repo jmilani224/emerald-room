@@ -1,5 +1,6 @@
 .card {
     width: 80vw;
+    max-width: 35rem;
     height: auto;
     background-color: #fff;
     font-weight: 400;
@@ -17,10 +18,10 @@
 .header-group {
     margin-top: 1em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     cursor: pointer;
-    
+    justify-content: center;
+    color: var(--main-color);
 }
 
 .emoji {
@@ -29,11 +30,23 @@
 }
 
 .list-heading {
+    display: flex;
     font-weight: 400;
     font-size: 1rem; 
     text-align: center;
     color: var(--main-color);
     margin-bottom: 1rem;
+    margin-right: 0.3rem;
+}
+
+.arrow-up [data-reach-accordion-item][data-state="open"].triangle {
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+}
+
+.arrow-down [data-reach-accordion-item][data-state="collapsed"].triangle {
+    transform: rotate(0deg);
+    transition: all 0.2s linear;
 }
 
 .children {
