@@ -8,12 +8,8 @@ hours:
   fri: 10 AM - 7 PM
   sat: 12 PM - 5 PM
 ---
-
-
 ## Location
 
-15721 Madison Ave, 
-
-Lakewood, OH 44107
-
-Phone: (216)339-9978
+15721 Madison Ave,  
+Lakewood, OH 44107  
+Phone: (216) 339-9978
