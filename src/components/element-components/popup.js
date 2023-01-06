@@ -22,7 +22,7 @@ const PopUp = (props) => {
 
     //const [modal, setModal] = useState(initialModalState)
 
-    const [modal, setModal] = useState({ open: true })
+    const [modal, setModal] = useState({ open: false })
 
     // useEffect(() => {
     //     setModal(props.cookie ? { open: false } : { open: data.markdownRemark.frontmatter.show })
