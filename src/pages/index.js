@@ -68,11 +68,7 @@ const IndexPage = () => {
 
             <Services />
 
-<<<<<<< HEAD
                 <BookFunc />
-=======
-            {/* <Book /> TEMP COMMENT WHILE COMPONENT IS FIXED*/}
->>>>>>> master
 
             <Loc />
         </div>
