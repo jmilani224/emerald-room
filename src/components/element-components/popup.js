@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import popupStyles from "./popup.module.css"
+import vv from "../../images/vv.png"
 
 
 const PopUp = (props) => {
@@ -16,24 +17,27 @@ const PopUp = (props) => {
 
     }
     `)
-    
-    const initialModalState = props.cookie ? {open: false} : {open: data.markdownRemark.frontmatter.show}
-    
+
+    const initialModalState = props.cookie ? { open: false } : { open: data.markdownRemark.frontmatter.show }
+
     const [modal, setModal] = useState(initialModalState)
 
+
     useEffect(() => {
-        setModal(props.cookie ? {open: false} : {open: data.markdownRemark.frontmatter.show})
-      }, [props.cookie]);
+        setModal(props.cookie ? { open: false } : { open: data.markdownRemark.frontmatter.show })
+    }, [props.cookie]);
 
     const handleModal = event => {
-        setModal({open: false})
+        setModal({ open: false })
     }
 
     return (
         <div className={modal.open ? popupStyles.containerOpen : popupStyles.containerClosed}>
             <div className={popupStyles.box}>
-                <div className={popupStyles.x} onClick={handleModal}>X</div>
-                <div dangerouslySetInnerHTML={{__html:data.markdownRemark.html}}>
+                <div className={popupStyles.x} onClick={handleModal}>x</div>
+                <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}>
+                {/* <img src={vv} /> */}
+                
                 </div>
             </div>
         </div>

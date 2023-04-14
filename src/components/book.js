@@ -7,7 +7,11 @@ class Book extends Component {
   
   componentDidMount(){
     const script=document.createElement('script')
+<<<<<<< HEAD
     script.src="https://www.vagaro.com/resources/WidgetEmbeddedLoader/OZqnCJ4nEJacT3qmV35y6JuPlXoSlXYO61Cq7fYO61WO4pkUcPCu7gevEhAJDXwOW?v=zxOBNHDBQpkWELAcx8OJg8LPozVGMfY9neinaAn9jw1#"
+=======
+    script.src=`https://www.vagaro.com/resources/WidgetEmbeddedLoader/OZqnCJ4nEJacT3qmV35y6JuPlXoSlXYO61Cq7fYO61WO4pkUcPCu7gevEhAJDXwOW?v=zxOBNHDBQpkWELAcx8OJg8LPozVGMfY9neinaAn9jw1#?r=${Math.floor(Math.random() * 9999)}`
+>>>>>>> master
     script.async=true;
     this.instance.appendChild(script)
     

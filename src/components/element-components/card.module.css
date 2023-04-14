@@ -1,10 +1,11 @@
 .card {
-    width: 13rem;
+    width: 80vw;
+    max-width: 35rem;
     height: auto;
     background-color: #fff;
     font-weight: 400;
     font-size: 0.8rem;
-    padding: 0.5em 0.3em 0.3em 0.8em;
+    padding: 0.5em 2em;
     margin: 1em;
     display: flex;
     flex-direction: column;
@@ -14,32 +15,56 @@
     transition: ease 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-2px);
-    transition: ease 0.3s;
-}
-
 .header-group {
     margin-top: 1em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: center;
+    color: var(--main-color);
 }
 
 .emoji {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
 }
 
 .list-heading {
+    display: flex;
     font-weight: 400;
-    font-size: 1.1rem; 
+    font-size: 1rem; 
     text-align: center;
     color: var(--main-color);
     margin-bottom: 1rem;
+    margin-right: 0.3rem;
+}
+
+.arrow-up [data-reach-accordion-item][data-state="open"].triangle {
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+}
+
+.arrow-down [data-reach-accordion-item][data-state="collapsed"].triangle {
+    transform: rotate(0deg);
+    transition: all 0.2s linear;
 }
 
 .children {
     color: var(--main-txt-color);
     padding: 0 0.3rem 0 0.3rem
+}
+
+/*Correcting styles coming from md HTML*/
+
+.card p {
+    margin-bottom: 0;
+}
+
+.card li {
+    margin-bottom: 1rem;
+}
+
+.card button {
+    border: none;
+    background-color: transparent;
 }

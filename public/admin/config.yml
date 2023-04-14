@@ -37,15 +37,15 @@ collections:
             name: "hours"
             widget: "object"
             fields:
-              - {label: "Sunday", name: "sun", widget: "string", required: "false"}
-              - {label: "Mon-Tues", name: "mon-tue", widget: "string", required: "false"}
-              - {label: "Wed-Thurs", name: "wed-thu", widget: "string", required: "false"}
-              - {label: "Friday", name: "fri", widget: "string", required: "false"}
-              - {label: "Saturday", name: "sat", widget: "string", required: "false"}
+              - {label: "Sunday", name: "sun", widget: "string", required: false}
+              - {label: "Mon-Tues", name: "mon-tue", widget: "string", required: false}
+              - {label: "Wed-Thurs", name: "wed-thu", widget: "string", required: false}
+              - {label: "Friday", name: "fri", widget: "string", required: false}
+              - {label: "Saturday", name: "sat", widget: "string", required: false}
           - {label: "Address", name: "body", widget: "markdown"}
   - label: "Services"
     name: "service-cards"
-    description: 'Edit or create a new "Services" card.'
+    description: 'Edit or create a new "Services" cards.'
     folder: "src/markdown-pages/services-cards"
     create: true
     fields:

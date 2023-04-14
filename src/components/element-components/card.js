@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import { VscTriangleDown } from 'react-icons/vsc';
+
 
 import cardStyles from './card.module.css'
 
-const  Card = (props) => {
+const  Card = ({ emoji, title, children, AccordionItem, AccordionButton, AccordionPanel }) => {
+
+    const [arrowSpin, setArrowSpin] = useState(false)
+    const handleSpin = () => {
+        setArrowSpin(!arrowSpin)
+    }
+
     return (  
-        <div className={cardStyles.card}>
-            <div className={cardStyles.headerGroup}>
-                <span className={cardStyles.emoji}>{props.emoji}</span>
-                <h2 className={cardStyles.listHeading}>{props.title}</h2>
+        <AccordionItem>
+            <div className={cardStyles.card}>
+                <AccordionButton onClick={handleSpin}>
+                    <div className={cardStyles.headerGroup}>
+                        <span className={cardStyles.emoji}>{emoji}</span>
+                        <h2 className={cardStyles.listHeading}>{title}</h2>
+                            {/* <VscTriangleDown className={arrowSpin ? cardStyles.arrowUp : cardStyles.arrowDown}/> */}
+                            <VscTriangleDown className={cardStyles.triangle}/>
+
+                    </div>
+                </AccordionButton>
+                <div className={cardStyles.children}>
+                <AccordionPanel>{children}</AccordionPanel>
+                </div>
             </div>
-            <div className={cardStyles.children}>
-                {props.children}
-            </div>
-        </div>
+        </AccordionItem>
     );
 }
  
