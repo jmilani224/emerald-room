@@ -1,6 +1,6 @@
 ---
 title: pop-up
-show: false
+show: true
 expirationInDays: 7
 ---
 # We'll Be Back!
