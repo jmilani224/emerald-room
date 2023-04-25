@@ -3,4 +3,4 @@ title: pop-up
 show: true
 expirationInDays: 7
 ---
-![](/src/images/vv.png)
+![](/src/images/logo.jpg)
