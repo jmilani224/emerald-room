@@ -1,6 +1,6 @@
 ---
 title: pop-up
-show: true
+show: false
 expirationInDays: 7
 ---
 ![](/src/images/logo.jpg)
